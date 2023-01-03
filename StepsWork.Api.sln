@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsWork.Api", "src\StepsWork.Api\StepsWork.Api.csproj", "{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StepsWork.Api", "src\StepsWork.Api\StepsWork.Api.csproj", "{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{0E4FCFC1-077B-4B2A-A72A-A74BFA06E405}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7633BF89-AE42-4C86-A813-00E032027828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsWork.Api.Infra", "src\StepsWork.Api.Infra\StepsWork.Api.Infra.csproj", "{30865013-56F4-4D66-961F-35CB81064578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsWork.Api.Domain", "src\StepsWork.Api.Domain\StepsWork.Api.Domain.csproj", "{A6C92CCE-22A7-47A8-B069-773DD481EA95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,22 @@ Global
 		{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30865013-56F4-4D66-961F-35CB81064578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30865013-56F4-4D66-961F-35CB81064578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30865013-56F4-4D66-961F-35CB81064578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30865013-56F4-4D66-961F-35CB81064578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C92CCE-22A7-47A8-B069-773DD481EA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C92CCE-22A7-47A8-B069-773DD481EA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C92CCE-22A7-47A8-B069-773DD481EA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C92CCE-22A7-47A8-B069-773DD481EA95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{66A50E1A-9027-4D3E-BCE1-9A50C9346B3C} = {0E4FCFC1-077B-4B2A-A72A-A74BFA06E405}
+		{30865013-56F4-4D66-961F-35CB81064578} = {7633BF89-AE42-4C86-A813-00E032027828}
+		{A6C92CCE-22A7-47A8-B069-773DD481EA95} = {7633BF89-AE42-4C86-A813-00E032027828}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F4DC741-2869-4D67-A195-66993A6AC637}
