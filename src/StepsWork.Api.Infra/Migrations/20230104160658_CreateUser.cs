@@ -15,7 +15,7 @@ namespace StepsWork.Api.Infra.Migrations
                 name: "user",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     name = table.Column<string>(type: "varchar(128)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -41,7 +41,7 @@ namespace StepsWork.Api.Infra.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_user", x => x.Id);
+                    table.PrimaryKey("PK_user", x => x.id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }

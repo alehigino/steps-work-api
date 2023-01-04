@@ -4,13 +4,17 @@ using StepsWork.Api.Domain.Entities;
 
 namespace StepsWork.Api.Infra.Mappings
 {
-    public class UserMap : IEntityTypeConfiguration<User>
+    public class UserMap: IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("user");
 
             builder.HasKey(u => u.Id);
+
+            builder
+                .Property(uc => uc.Id)
+                .HasColumnName("id");
 
             builder
                 .Property(u => u.Name)

@@ -9,8 +9,8 @@ using StepsWork.Api.Infra;
 namespace StepsWork.Api.Infra.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230103183300_CreateUser")]
-    partial class CreateUser
+    [Migration("20230104160909_CreateCategory")]
+    partial class CreateCategory
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,11 +19,29 @@ namespace StepsWork.Api.Infra.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.17");
 
+            modelBuilder.Entity("StepsWork.Api.Domain.Entities.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("varchar(64)")
+                        .HasColumnName("description");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("category");
+                });
+
             modelBuilder.Entity("StepsWork.Api.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("id");
 
                     b.Property<string>("City")
                         .HasColumnType("varchar(128)")

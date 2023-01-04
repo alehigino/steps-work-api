@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StepsWork.Api.Domain.Entities
 {
@@ -17,5 +18,8 @@ namespace StepsWork.Api.Domain.Entities
         public string State { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+
+        public virtual IList<UserCategory> UserCategories { get; set; }
+        public virtual IList<Service> Services { get; set; }
     }
 }
